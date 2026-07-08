@@ -3,23 +3,19 @@
     "incremental": true,
     "isolatedModules": true,
     "lib": ["es2022"],
+
     "module": "esnext",
     "moduleResolution": "bundler",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": false,
-    "noImplicitReturns": true,
-    "noUnusedLocals": false,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": false,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "useUnknownInCatchVariables": true,
-    "alwaysStrict": true,
-    "skipLibCheck": true,
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
     "target": "es2022",
+
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+
     "types": [],
     "customConditions": ["workspace"]
   }
