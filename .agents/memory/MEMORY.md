@@ -1,0 +1,1 @@
+- [Health Reset site architecture](healthreset-architecture.md) — full-stack Dr. Shweta Tripathi site; key decisions on admin auth, email, stack.

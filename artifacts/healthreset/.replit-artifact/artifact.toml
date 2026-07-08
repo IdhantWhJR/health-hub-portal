@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "Dr. Shweta Tripathi — Health Reset"
+version = "1.0.0"
+id = "artifacts/healthreset"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19298
+
+[services.development]
+run = "pnpm --filter @workspace/healthreset run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/healthreset", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/healthreset/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19298"
+BASE_PATH = "/"
